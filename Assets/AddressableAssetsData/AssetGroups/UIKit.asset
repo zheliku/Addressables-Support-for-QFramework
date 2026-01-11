@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UIKit
+  m_EditorClassIdentifier: 
+  m_GroupName: UIKit
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ad2bde748f856084fa68667876a230c3
+  m_SerializeEntries:
+  - m_GUID: 1662284b1e9596b45aff61f2d6c2dd39
+    m_Address: UIBasicPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2eb4df0b67ad0934594c2dc21e29dfd4
+    m_Address: UIStackPanel2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 65bb8bab0ed49c54c881be7b450f1c42
+    m_Address: UIStackPanel1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5048a405cc3e414f9c7d0fa7227cd53
+    m_Address: UIMultiPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d0ae8a5b81f37f24ea5eb6186350cb18, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7c4799f5b8bb85b4b930c2f76524ddae, type: 2}
+    - {fileID: 11400000, guid: d0ad7a36b085e8a43a93d20209993b39, type: 2}

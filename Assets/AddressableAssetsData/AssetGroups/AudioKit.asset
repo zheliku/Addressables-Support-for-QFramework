@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AudioKit
+  m_EditorClassIdentifier: 
+  m_GroupName: AudioKit
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 514addfa903c6684c908a6b5ff286b8b
+  m_SerializeEntries:
+  - m_GUID: 2919a4e154f584245965373256b0d8b1
+    m_Address: game_bg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b8946271d486436da26ba41111d85a1
+    m_Address: button_clicked
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 468df70f6ebf1de4a85cc9a83cd84588
+    m_Address: hero_hurt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4bd8385089114514ab9dc5c8b3b931d
+    m_Address: home_bg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d0ae8a5b81f37f24ea5eb6186350cb18, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 519ca8f18de4a5840a8a03a5021fa53f, type: 2}
+    - {fileID: 11400000, guid: 52d15680f53dbab4b92d5da1cbca02ff, type: 2}
