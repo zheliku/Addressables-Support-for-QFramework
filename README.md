@@ -6,7 +6,6 @@
 
 ## ✨ 特性
 
-- 🚀 **零配置启动** - 自动注册，无需手动初始化
 - 🔌 **完全兼容** - 与 QFramework 原有 API 保持一致
 - 📦 **三大模块支持** - ResKit、UIKit、AudioKit 全覆盖
 - 🎯 **灵活的资源查询** - 支持单资源、多资源并集/交集加载
@@ -46,9 +45,41 @@ Assets/
 
 ## 🔧 安装
 
-1. 确保已安装 QFramework 和 Unity Addressables Package
-2. 将 `Assets/QFramework Extension/AddressablesSupport` 文件夹复制到你的项目中
-3. 完成！扩展会自动注册并生效
+1. 确保项目中已安装 QFramework
+2. 在 UMP（Unity Package Manager）中使用以下命令进行 git 安装：
+
+   ```
+   https://github.com/zheliku/Addressables-Support-for-QFramework.git?path=Assets/QFrameworkWithAddressables
+   ```
+
+   
+
+   或者直接将 `Assets/QFramework Extension/AddressablesSupport` 文件夹复制到你的项目中
+3. 注释冲突文件
+
+   为了避免与本插件冲突，请在使用前注释掉以下两个文件的内容：
+
+   - `Assets/QFramework/Toolkits/SupportOldQF/Scripts/AudioKitWithResKitInit.cs`
+   - `Assets/QFramework/Toolkits/SupportOldQF/Scripts/UIKitWithResKitInit.cs`
+
+   这两个文件是 QFramework 原有的初始化脚本，会与本插件的 Addressables 加载方式（AudioKit、UIKit）产生冲突。
+
+   打开上述两个文件，将所有代码用 `//` 注释掉，或者直接删除文件内容。
+
+   ```csharp
+   // using System;
+   // using UnityEngine;
+   
+   // namespace QFramework
+   // {
+   //     public class AudioKitWithResKitInit
+   //     {
+   //         // ... 注释掉全部内容
+   //     }
+   // }
+   ```
+
+   完成以上步骤后，即可正常使用本插件。
 
 ## 📖 使用方法
 
