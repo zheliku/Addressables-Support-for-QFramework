@@ -21,26 +21,30 @@
 
 ```
 Assets/
-├── QFramework Extension/
-│   └── AddressablesSupport/
-│       ├── ResKit/                          # ResKit 扩展
-│       │   ├── AddressablesResCreator.cs    # 资源创建器（自动注册）
-│       │   ├── AddressablesSingleRes.cs     # 单资源加载类
-│       │   ├── AddressablesMultipleRes.cs   # 多资源加载类
-│       │   └── AddressablesResLoaderExtensions.cs  # 场景加载扩展方法
-│       ├── UIKit/                           # UIKit 扩展
-│       │   ├── AddressablesPanelLoaderPool.cs    # Panel 加载器
-│       │   └── UIKitWithAddressablesInit.cs      # UIKit 自动初始化
-│       └── AudioKit/                        # AudioKit 扩展
-│           ├── AddressablesAudioLoaderPool.cs    # Audio 加载器
-│           └── AudioKitWithAddressablesInit.cs   # AudioKit 自动初始化
+├── QFrameworkWithAddressables/              # 核心插件（UPM 包）
+│   ├── package.json                         # UPM 包配置
+│   ├── CHANGELOG.md                         # 更新日志
+│   ├── QFrameworkWithAddressables.asmdef    # 程序集定义
+│   ├── RunTime/                             # 运行时代码
+│   │   ├── ResKit/                          # ResKit 扩展
+│   │   │   ├── AddressablesResCreator.cs    # 资源创建器（自动注册）
+│   │   │   ├── AddressablesSingleRes.cs     # 单资源加载类
+│   │   │   ├── AddressablesMultipleRes.cs   # 多资源加载类
+│   │   │   └── AddressablesResLoaderExtensions.cs  # 场景加载扩展方法
+│   │   ├── UIKit/                           # UIKit 扩展
+│   │   │   ├── AddressablesPanelLoaderPool.cs    # Panel 加载器
+│   │   │   └── UIKitWithAddressablesInit.cs      # UIKit 自动初始化
+│   │   └── AudioKit/                        # AudioKit 扩展
+│   │       ├── AddressablesAudioLoaderPool.cs    # Audio 加载器
+│   │       └── AudioKitWithAddressablesInit.cs   # AudioKit 自动初始化
+│   └── Samples~/                            # UPM 示例（通过 Package Manager 导入）
 └── Samples/                                 # 示例代码
-    └── Frameworks & Architecture/
-        └── QFramework/
-            └── AddressablesSupport/
-                ├── ResKit/                  # ResKit 示例
-                ├── UIKit/                   # UIKit 示例
-                └── AudioKit/                # AudioKit 示例
+    ├── ResKit/                              # ResKit 示例
+    │   └── Addressables/                    # Addressables 资源示例
+    ├── UIKit/                               # UIKit 示例
+    │   └── Addressables/                    # UI Prefab 示例
+    └── AudioKit/                            # AudioKit 示例
+        └── Addressables/                    # 音频资源示例
 ```
 
 ## 🔧 安装
@@ -52,9 +56,8 @@ Assets/
    https://github.com/zheliku/Addressables-Support-for-QFramework.git?path=Assets/QFrameworkWithAddressables
    ```
 
-   
-
    或者直接将 `Assets/QFramework Extension/AddressablesSupport` 文件夹复制到你的项目中
+
 3. 注释冲突文件
 
    为了避免与本插件冲突，请在使用前注释掉以下两个文件的内容：
@@ -80,6 +83,10 @@ Assets/
    ```
 
    完成以上步骤后，即可正常使用本插件。
+
+4. 对使用 InpustSystem 的项目，需要将 Assets/QFramework/Toolkits/UIKit/Scripts/Resources/UIRoot.prefab 子物体中的 EventSystem 上的 Standalone Input Module 改为 InputSystemOiinputModule 组件。其他示例场景同理。
+
+   <img src="https://raw.githubusercontent.com/zheliku/TyporaImgBed/main/ImgBed202601142042292.png" alt="image-20260114204223153" style="zoom:50%;" />
 
 ## 📖 使用方法
 

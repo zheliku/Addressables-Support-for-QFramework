@@ -1,6 +1,6 @@
 {
     "name": "com.zheliku.qframeworkwithaddressables",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "displayName": "QFrameworkWithAddressables",
     "description": "QFramework 集成 Addressables 支持，方便使用 Addressables 进行资源管理。",
     "unity": "2021.3",
