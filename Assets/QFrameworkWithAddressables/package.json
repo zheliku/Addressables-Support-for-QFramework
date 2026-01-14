@@ -1,0 +1,31 @@
+{
+    "name": "com.zheliku.QFrameworkWithAddressables",
+    "version": "1.1.0",
+    "displayName": "QFrameworkWithAddressables",
+    "description": "QFramework 集成 Addressables 支持，方便使用 Addressables 进行资源管理。",
+    "unity": "2021.3",
+    "author": {
+        "name": "zheliku",
+        "email": "zheliku25@gmail.com"
+    },
+    "dependencies": {
+        "com.unity.addressables": "2.3.16"
+    },
+    "samples": [
+        {
+            "displayName": "AudioKit Samples",
+            "description": "AudioKit 示例项目",
+            "path": "Samples~/AudioKit"
+        },
+        {
+            "displayName": "ResKit Samples",
+            "description": "ResKit 示例项目",
+            "path": "Samples~/ResKit"
+        },
+        {
+            "displayName": "UIKit Samples",
+            "description": "UIKit 示例项目",
+            "path": "Samples~/UIKit"
+        }
+    ]
+}

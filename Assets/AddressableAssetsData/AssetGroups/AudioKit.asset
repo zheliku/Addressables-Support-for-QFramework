@@ -23,7 +23,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3b8946271d486436da26ba41111d85a1
-    m_Address: button_clicked
+    m_Address: Button_clicked
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
